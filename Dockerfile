@@ -23,7 +23,7 @@ RUN chown -R sanbiusr:sanbigrp /app
 
 USER sanbiusr
 
-ENTRYPOINT ["streamlit", "run", "Main.py", \
+ENTRYPOINT ["streamlit", "run", "main.py", \
     "--server.port=8501", \
     "--server.address=0.0.0.0", \
     "--server.headless=true", \
