@@ -21,7 +21,7 @@ class DatabaseConfig:
 @dataclass
 class AppConfig:
     """Application configuration"""
-    title: str = "SANBI Ecosystem Risk Atlas"
+    title: str = "SANBI Ecosystem Risk Profiler"
     subtitle: str = "South African Ecosystem Risk Assessment and Vulnerability Profiler"
     description: str = """
     This atlas provides ecosystem-level risk assessment based on the 2018 National 
