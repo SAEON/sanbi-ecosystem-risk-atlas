@@ -1,6 +1,6 @@
 services:
   sanbi:
-    image: sanbi-ecosystem
+    image: sanbi-ecosystem:${TAG}
     container_name: sanbi-ecosystem
     build:
       context: .
@@ -8,9 +8,9 @@ services:
     env_file:
       - .env
     ports:
-      - "8501:8501"
+      - "8503:8501"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8501/sanbihealth/"]
+      test: ["CMD", "curl", "-f", "http://localhost:8501/sanbi/"]
       interval: 30s
       timeout: 10s
       retries: 3

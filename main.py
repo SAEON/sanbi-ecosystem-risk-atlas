@@ -18,7 +18,7 @@ from app.config import (
 )
 from data import check_database_health, get_cache_manager
 
-def main():
+def Main():
     """Main application entry point"""
     
     # Initialize Streamlit configuration
@@ -77,15 +77,15 @@ def main():
             if st.button(" **Biome Explorer**", use_container_width=True):
                 st.switch_page("pages/Biome_Explorer.py")
                 
-            if st.button(" **Crisis Alerts**", use_container_width=True):
-                st.switch_page("pages/03_🚨_Crisis_Alerts.py")
+            #if st.button(" **Crisis Alerts**", use_container_width=True):
+            #    st.switch_page("pages/03_🚨_Crisis_Alerts.py")
         
         with col2:
             if st.button(" **Risk Categories**", use_container_width=True):
                 st.switch_page("pages/Risk_Categories.py")
                 
-            if st.button(" **Success Stories**", use_container_width=True):
-                st.switch_page("pages/05_🎖️_Success_Stories.py")
+            #if st.button(" **Success Stories**", use_container_width=True):
+            #    st.switch_page("pages/05_🎖️_Success_Stories.py")
         
         # App description
         st.markdown("---")
@@ -197,4 +197,4 @@ def main():
         st.markdown(f"**Version:** {app_config.version}")
 
 if __name__ == "__main__":
-    main()
+    Main()

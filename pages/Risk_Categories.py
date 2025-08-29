@@ -34,7 +34,7 @@ def main():
     app_config = AppConfig()
     
     # Page header
-    st.title("Risk Categories Deep Dive")
+    st.title("Risk Categories")
     st.markdown("Detailed analysis of ecosystem risk factors across South Africa's biomes")
     
     # Check database health
