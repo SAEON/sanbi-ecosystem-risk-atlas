@@ -27,7 +27,7 @@ class EcosystemQueries:
             COUNT(*) as ecosystem_count
         FROM {self.full_table}
         WHERE biome_18 IS NOT NULL 
-        AND biome_18 != '' 
+        AND biome_18 != ' ' 
         AND biome_18 != '<Null>'
         GROUP BY biome_18
         ORDER BY biome_18
