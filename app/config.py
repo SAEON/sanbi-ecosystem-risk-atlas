@@ -182,7 +182,7 @@ MAP_CONFIG = {
 
 # Performance Settings
 CACHE_CONFIG = {
-    "ttl": 3600,  # 1 hour cache
+    "ttl": 432000,  # 5 days 
     "max_entries": 1000,
     "show_spinner": True
 }
