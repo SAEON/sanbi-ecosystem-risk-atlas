@@ -9,6 +9,8 @@ services:
       - /opt/apps/sarva/web/sanbi-ecosystem-risk-atlas/.env
     volumes:
       - /opt/apps/sarva/web/sanbi-ecosystem-risk-atlas/.env:/app/.env:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "8503:8501"
     healthcheck:

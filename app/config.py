@@ -10,13 +10,13 @@ import streamlit as st
 @dataclass
 class DatabaseConfig:
     """Database connection configuration"""
-    host: str = os.getenv("DB_HOST", "localhost")
+    host: str = (os.getenv("DB_HOST", "localhost")).strip()
     port: int = int(os.getenv("DB_PORT", "5432"))
-    database: str = os.getenv("DB_NAME", "ecosystem_risk_db")
-    username: str = os.getenv("DB_USER", "postgres")
-    password: str = os.getenv("DB_PASSWORD", "")
-    schema: str = os.getenv("DB_SCHEMA", "sdgs")
-    table: str = os.getenv("DB_TABLE", "environmental_risk")
+    database: str = (os.getenv("DB_NAME", "ecosystem_risk_db")).strip()
+    username: str = (os.getenv("DB_USER", "postgres")).strip()
+    password: str = (os.getenv("DB_PASSWORD", "")).strip()
+    schema: str = (os.getenv("DB_SCHEMA", "sdgs")).strip()
+    table: str = (os.getenv("DB_TABLE", "environmental_risk")).strip()
 
 @dataclass
 class AppConfig:
