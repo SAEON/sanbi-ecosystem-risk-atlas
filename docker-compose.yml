@@ -6,9 +6,9 @@ services:
       context: .
       dockerfile: ./Dockerfile
     env_file:
-      - /opt/apps/sarva/web/sanbi-ecosystem-risk-atlas/.env
+      - .env
     volumes:
-      - /opt/apps/sarva/web/sanbi-ecosystem-risk-atlas/.env:/app/.env:ro
+      - ./.env:/app/.env:ro
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
